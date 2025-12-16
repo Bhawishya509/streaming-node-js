@@ -4,7 +4,11 @@ import fs from "fs";
 import cors from "cors";
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin:"https://streaming-node-js.vercel.app",
+  methods:["GET","POST","PUT","DELETE"],
+  credentials:true
+}));
 
 app.get("/", (req, res) => {
   const range = req.headers.range;

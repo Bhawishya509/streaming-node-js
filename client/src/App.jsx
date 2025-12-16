@@ -9,7 +9,7 @@ export default function App() {
         controls
         width={800}
         height={450}
-        src="http://localhost:9600/"
+        src="https://streaming-node-js-1.onrender.com"
       >
         Your browser does not support the video tag.
       </video>
